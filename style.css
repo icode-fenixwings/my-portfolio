@@ -15,7 +15,7 @@ body {
 
 /* Hero Section*/
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/New pattern-imges/img_bg-pattern.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./New pattern-imges/img_bg-pattern.jpg');
     height: 100vh;
     color: white;
     display: flex;
