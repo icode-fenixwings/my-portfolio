@@ -429,18 +429,58 @@ box-shadow: 0 12px 20px, rgba(0, 0, 0, 0.2);
     }
 }
 
-/*  Responsiveness */
+/*  Responsiveness*/
 
-@media (max-width: 480px) {
-    .aboout-container{
+@media (max-width: 600px) {
+    .hero {
+    height: 50vh;
+    }
+  .hero-title {
+    font-size: 1.5rem;
+   }
+   .hero-title .highlight {
+    font-weight: 400;
+   }
+    .hero-subtitle {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    }
+    .social-icons {
+    margin-top: 0.8rem;
+    }
+
+    .social-icon {
+    color: white;
+    font-size: 1.5rem;
+    }    
+
+    .social-icon:hover {
+    transform: scale(0.8);
+    }
+    .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px,  rgba(0, 0, 0, 0.1);
+    }
+    .about-container{
         flex-direction: colomn;
         text-align: center;
     }
     .about-photo{
-        margin-bottom: 1.5rem;
+        margin-left: 2.2rem;
+        margin-bottom: 1.2rem;
+        justify-content: center;
+        align-items: center;
     }
+    .about-text {
+    font-size: 1.0rem;
+    padding: 1.5rem;
+    }
+    
     .skills-grid, 
     .project-grid{  
         grid-template-columns: 1fr;
     }
+
 }
