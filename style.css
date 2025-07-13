@@ -287,7 +287,8 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.project-description{
+.project-link{
+    text-decoration: none;
     font-size: 1rem;
     color: #ddd;
 }
