@@ -66,18 +66,20 @@ body {
 .navbar {
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 1rem 0;
+    padding: 1rem 38%;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px,  rgba(0, 0, 0, 0.1);
+    justify-content: center;
+   
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+   /* justify-content: center;*/
 }
 
 .navbar a {
@@ -89,6 +91,25 @@ body {
 
 .navbar a:hover {
     color: #ffd700;
+}
+.navbar .container{
+    display: flex;
+   /* justify-content: space-between;*/
+}
+
+.hamburger {
+  cursor: pointer;
+  opacity: 0.6;
+  display: none;
+  margin-left: 150%;
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  margin: 5px 0;
+  background-color: white;
+  display: block;
+  border-radius: 10px;
 }
 
 /* Section Styling */
@@ -108,9 +129,9 @@ body {
 .section-title::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 100px;
     height: 4px;
-    background: yellow;
+    background: red;
     margin: 10px auto 0;
     border-radius: 20px;
 }
@@ -131,6 +152,7 @@ body {
     justify-content: space-between;
     gap: 1.5rem;
     flex-wrap: wrap;
+    padding-left: 5%;
 }
 
 .about-photo {
@@ -164,14 +186,15 @@ body {
 .about-title::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 100px;
     height: 3px;
-    background: #ffd700;
+    background: red;
     margin: 10px 0 15px;
     border-radius: 2px;
 }
 
 .about-text-box {
+    border-radius: 20px;
     border-right: 3px solid green;
     border-bottom: 3px solid green;
 }
@@ -185,19 +208,19 @@ body {
     text-align: justify;
     position: relative;
     background: rgba(255, 255, 255, 0.9);
-    border: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+     border-radius: 20px;
 }
 
 .about-text:hover {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-.gradient-txt {
-    background: linear-gradient (90deg,black,whitesmoke);
+.about-text .gradient-text {
+    background: linear-gradient (90deg,red,greenyellow);
     -webkit-text-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: tr;
     font-weight: bold;
 }
 
@@ -464,6 +487,37 @@ box-shadow: 0 12px 20px, rgba(0, 0, 0, 0.2);
     z-index: 1000;
     box-shadow: 0 4px 6px,  rgba(0, 0, 0, 0.1);
     }
+    
+  nav .nav-links {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 67%;
+    background-color: black;
+    flex-direction: column;
+    padding: 15px 0;
+    transform: translateX(100%);
+    height: 100vh;
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.7;
+  }
+  nav .open {
+    transform: translateX(0%);
+  }
+  nav .nav-links a {
+    margin: 10px;
+    display: block;
+    text-align: center;
+    z-index: 100;
+    color: white;
+  }
+  nav .open {
+    transform: translateX(0%);
+  }
+  .hamburger {
+    display: block;
+  } 
+  
     .about-container{
         flex-direction: colomn;
         text-align: center;
@@ -479,8 +533,9 @@ box-shadow: 0 12px 20px, rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
     }
     
-    .skills-grid, 
-    .project-grid{  
+    .skills-grid, .project-grid{  
+        font-size: 1.0rem;
+        padding: 1.0rem;
         grid-template-columns: 1fr;
     }
 
