@@ -26,6 +26,7 @@ body {
     background-repeat: none;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .hero-title {
@@ -101,7 +102,7 @@ body {
   cursor: pointer;
   opacity: 0.6;
   display: none;
-  margin-left: 150%;
+  margin-left: 200%;
 }
 .hamburger span {
   height: 3px;
@@ -469,6 +470,13 @@ box-shadow: 0 12px 20px, rgba(0, 0, 0, 0.2);
     font-size: 0.8rem;
     margin-top: 5px;
     }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+         box-shadow: 0 4px 6px,  rgba(0, 0, 0, 0.1);
+    }
     .social-icons {
     margin-top: 0.8rem;
     }
@@ -481,12 +489,12 @@ box-shadow: 0 12px 20px, rgba(0, 0, 0, 0.2);
     .social-icon:hover {
     transform: scale(0.8);
     }
-    .navbar {
+    /*.navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px,  rgba(0, 0, 0, 0.1);
-    }
+    }*/
     
   nav .nav-links {
     position: fixed;
